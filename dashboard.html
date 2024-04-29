@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Acme Auto Showcase </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://www.autologica.com/wp-content/themes/autologica/css/index.css">
+    <link rel="stylesheet" href="https://www.autologica.com/wp-content/themes/autologica/css/mobile-index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+
+    <meta name='robots' content='max-image-preview:large' />
+    <script type="text/javascript">
+     
+        window._wpemojiSettings = { "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/", "ext": ".png", "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/", "svgExt": ".svg", "source": { "concatemoji": "https:\/\/www.autologica.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.5.2" } };
+       
+        !function (i, n) { var o, s, e; function c(e) { try { var t = { supportTests: e, timestamp: (new Date).valueOf() }; sessionStorage.setItem(o, JSON.stringify(t)) } catch (e) { } } function p(e, t, n) { e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0); var t = new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data), r = (e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(n, 0, 0), new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data)); return t.every(function (e, t) { return e === r[t] }) } function u(e, t, n) { switch (t) { case "flag": return n(e, "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f", "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f") ? !1 : !n(e, "\ud83c\uddfa\ud83c\uddf3", "\ud83c\uddfa\u200b\ud83c\uddf3") && !n(e, "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f", "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f"); case "emoji": return !n(e, "\ud83d\udc26\u200d\u2b1b", "\ud83d\udc26\u200b\u2b1b") }return !1 } function f(e, t, n) { var r = "undefined" != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? new OffscreenCanvas(300, 150) : i.createElement("canvas"), a = r.getContext("2d", { willReadFrequently: !0 }), o = (a.textBaseline = "top", a.font = "600 32px Arial", {}); return e.forEach(function (e) { o[e] = t(a, e, n) }), o } function t(e) { var t = i.createElement("script"); t.src = e, t.defer = !0, i.head.appendChild(t) } "undefined" != typeof Promise && (o = "wpEmojiSettingsSupports", s = ["flag", "emoji"], n.supports = { everything: !0, everythingExceptFlag: !0 }, e = new Promise(function (e) { i.addEventListener("DOMContentLoaded", e, { once: !0 }) }), new Promise(function (t) { var n = function () { try { var e = JSON.parse(sessionStorage.getItem(o)); if ("object" == typeof e && "number" == typeof e.timestamp && (new Date).valueOf() < e.timestamp + 604800 && "object" == typeof e.supportTests) return e.supportTests } catch (e) { } return null }(); if (!n) { if ("undefined" != typeof Worker && "undefined" != typeof OffscreenCanvas && "undefined" != typeof URL && URL.createObjectURL && "undefined" != typeof Blob) try { var e = "postMessage(" + f.toString() + "(" + [JSON.stringify(s), u.toString(), p.toString()].join(",") + "));", r = new Blob([e], { type: "text/javascript" }), a = new Worker(URL.createObjectURL(r), { name: "wpTestEmojiSupports" }); return void (a.onmessage = function (e) { c(n = e.data), a.terminate(), t(n) }) } catch (e) { } c(n = f(s, u, p)) } t(n) }).then(function (e) { for (var t in e) n.supports[t] = e[t], n.supports.everything = n.supports.everything && n.supports[t], "flag" !== t && (n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && n.supports[t]); n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && !n.supports.flag, n.DOMReady = !1, n.readyCallback = function () { n.DOMReady = !0 } }).then(function () { return e }).then(function () { var e; n.supports.everything || (n.readyCallback(), (e = n.source || {}).concatemoji ? t(e.concatemoji) : e.wpemoji && e.twemoji && (t(e.twemoji), t(e.wpemoji))) })) }((window, document), window._wpemojiSettings);
+        
+    </script>
+    <style id='wp-emoji-styles-inline-css' type='text/css'>
+
+    </style>
+    <link rel='stylesheet' id='cookie-notice-front-css'
+        href='https://www.autologica.com/wp-content/plugins/cookie-notice/css/front.min.css' type='text/css'
+        media='all' />
+    <script type="text/javascript" id="cookie-notice-front-js-before">
+       
+        var cnArgs = { "ajaxUrl": "https:\/\/www.autologica.com\/wp-admin\/admin-ajax.php", "nonce": "7270d5e8d9", "hideEffect": "fade", "position": "bottom", "onScroll": false, "onScrollOffset": 100, "onClick": false, "cookieName": "cookie_notice_accepted", "cookieTime": 2592000, "cookieTimeRejected": 2592000, "globalCookie": false, "redirection": false, "cache": true, "revokeCookies": false, "revokeCookiesOpt": "automatic" };
+      
+    </script>
+    <script type="text/javascript" src="https://www.autologica.com/wp-content/plugins/cookie-notice/js/front.min.js"
+        id="cookie-notice-front-js"></script>
+    <link rel="https://api.w.org/" href="https://www.autologica.com/wp-json/" />
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.autologica.com/xmlrpc.php?rsd" />
+    <meta name="generator" content="WordPress 6.5.2" />
+    <link rel="canonical" href="http://www.autologica.com/solutions/kpi-dashboard/" />
+    <link rel='shortlink' href='https://www.autologica.com/?p=1425' />
+    <link rel="alternate" type="application/json+oembed"
+        href="https://www.autologica.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.autologica.com%2Fsolutions%2Fkpi-dashboard%2F" />
+    <link rel="alternate" type="text/xml+oembed"
+        href="https://www.autologica.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.autologica.com%2Fsolutions%2Fkpi-dashboard%2F&#038;format=xml" />
+    <meta name="generator"
+        content="Elementor 3.21.0; features: e_optimized_assets_loading, e_optimized_css_loading, e_font_icon_svg, additional_custom_breakpoints, e_lazyload; settings: css_print_method-external, google_font-enabled, font_display-swap">
+<link rel="stylesheet" href="stile2.css">
+    <noscript><img height="1" width="1" style="display:none"
+            src=https://www.facebook.com/tr?id=169802648474853&ev=PageView&noscript=1 /></noscript>
+</head>
+
+    <body id="home" class="sans">
+        <nav class="navsher">
+            <ul class="ull">
+                <a href=""><li>Toyota</li></a>
+                <a href=""><li>Chevrolet</li></a>
+                <a href=""><li>Nisan</li></a>
+                <a href=""><li>Sobre Nosotros</li></a>
+            </ul>
+        </nav>
+
+    <div class="container page-tittle-services titulo-bloque">
+        <div class="row">
+            <div class="col-md-6 pb-5">
+                <h4>Tablero de Control</h4>
+                <h1>Dashboard de Acme Auto Showcasepara gerentes y titulares de concesionarias</h1>
+                <p>El Tablero de Control que le permite ver nuestra vision y mision respecto a representa estas tres
+                    marcas de autos .</p>
+                <a class="btn btn-dark mt-3" href="http://autologica.com/solutions/kpi-dashboard/#webform">Estoy
+                    interesado</a>
+            </div>
+            <div class="col-md-6 justify-content-center d-flex">
+                <img src="index.html" alt="">
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section id="dms-kpi">
+
+        <section>
+            <div class="container bloque-primero">
+                <div class="row fancy-tittles">
+                    <div data-aos="zoom-in" data-aos-duration="2000" class="col-md-12 mb-4  pt-5 pb-3 text-center">
+                        <img class="mb-5"
+                            src="https://th.bing.com/th/id/OIG1.c90Bo1CdUeJ4amyHrG_V?pid=ImgGn" alt="" style="height: 200px; width: 200px;">
+                        <h2><b>¿Qué es el Tablero de control de Acme Auto Showcase?</b></h2>
+                        <p>Es una web para padres de familias amas de casa, psonas trabajadoras, personas de queres ir
+                            de viajes a otros sitios en familia para que conoscoan un poco mas de sus autos que
+                            quisieran paar el dia a dia
+                            y quered abquirir uno.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row mt-5">
+                    <div class="col-md-12 text-center ">
+                        <h2 class="mt-0"><b>Acme Auto Showcase en la palma de su mano</b></h2>
+                    </div>
+                </div>
+                <div data-aos="fade-up-left" data-aos-duration="2000" class="row mt-3 mb-5 blue-column white">
+                    <div class="col-md-6 p-4 d-flex flex-column justify-content-center ">
+                        <h3>Esencial para cualquier persona </h3>
+                        <div class="divider-white mb-3"></div>
+                        <p class="pr-5">Acceda al Tablero de Control en cualquier momento y desde cualquier lugar, desde
+                            la computadora o dispositivo móvil.</p>
+                    </div>
+                    <div class="col-md-6 video-column-full p-0">
+                        <img src="https://www.autologica.com/wp-content/uploads/2021/05/kpi-img-celuenmano.jpg"
+                            style="height: 100%;" alt="graphic">
+                    </div>
+                </div>
+                <div data-aos="fade-up-right" data-aos-duration="2000"
+                    class="row flex-row-reverse mt-3 mb-5 blue-column white">
+                    <div class="col-md-6 p-4 d-flex flex-column justify-content-center ">
+                        <h3>Indicadores clave</h3>
+                        <div class="divider-white mb-3"></div>
+                        <p class="pr-5">Vea al instante los indicadores clave de las unidades de negocio más importantes
+                            de la concesionaria: ventas de vehículos nuevos. Revise los autos para cada punto de venta y
+                            de diferentes períodos.</p>
+                    </div>
+                    <div class="col-md-6 video-column-full p-0">
+                        <img src="https://www.autologica.com/wp-content/uploads/2021/06/KPI.jpg" style="height: 100%;"
+                            alt="graphic">
+                    </div>
+                </div>
+                <div data-aos="fade-up-left" data-aos-duration="2000" class="row mt-3 mb-5 blue-column white">
+                    <div class="col-md-6 p-4 d-flex flex-column justify-content-center ">
+                        <h3>Profundice con BI</h3>
+                        <div class="divider-white mb-3"></div>
+                        <p class="pr-5">Conozca más sobre nosoros pa que si al abquiri un vehiculo de nuestra agencia
+                            tenga mayor seguridad al comprarlo como al usarlo.</p>
+                    </div>
+                    <div class="col-md-6 video-column-full p-0">
+                        <img src="https://www.autologica.com/wp-content/uploads/2021/02/laptop-BI.jpg"
+                            style="height: 100%;" alt="graphic">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="call-action-service"
+            style="background-image: url(https://www.autologica.com/wp-content/themes/autologica/img/industrias/Automoviles/Franja\ naranja.svg);">
+            <div class="col-md-12 justify-content-center d-flex ">
+                <a href="index.html">
+                    <button type="button" class="btn btn-dark py-3 py-3 m-4"> Estoy interesado </button>
+                </a>
+            </div>
+        </section>
+
+
+        <section>
+            <div class="container bloque-primero">
+                <div class="row fancy-tittles">
+                    <div data-aos="zoom-in" data-aos-duration="2000" class="col-md-12 mb-4  pt-5 pb-3 text-center">
+                        <h2><b>Funciones del Tablero de Control</b></h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div data-aos="zoom-in" data-aos-duration="2000"
+                        class="col-md-4 my-3 p-3 d-flex align-items-center text-center item-products aos-init">
+                        <div class="img-container-item">
+                            <img class="py-2" src="https://www.autologica.com/wp-content/uploads/2021/05/ico-002.png"
+                                alt="icono">
+
+                        </div>
+                        <h4 class="py-3 blue">Indicadores gerenciales</h4>
+                        <p>Una mirada global a los indicadores de gestión de cada departamento de la concesionaria de
+                            vehículos.</p>
+
+                    </div>
+                    <div data-aos="zoom-in" data-aos-duration="2000"
+                        class="col-md-4 my-3 p-3 d-flex align-items-center text-center item-products aos-init">
+                        <div class="img-container-item">
+                            <img class="py-2" src="https://www.autologica.com/wp-content/uploads/2021/05/ico-003.png"
+                                alt="icono">
+
+                        </div>
+                        <h4 class="py-3 blue">Indicadores de ventas</h4>
+                        <p>Monitoree la venta total de autos. Compare las ventas entre
+                            las distintas unidades de negocio de la concesionaria.</p>
+
+                    </div>
+                    <div data-aos="zoom-in" data-aos-duration="2000"
+                        class="col-md-4 my-3 p-3 d-flex align-items-center text-center item-products aos-init">
+                        <div class="img-container-item">
+                            <img class="py-2" src="https://www.autologica.com/wp-content/uploads/2021/05/ico-001.png"
+                                alt="icono">
+
+                        </div>
+                        <h4 class="py-3 blue">Indicadores de repuestos</h4>
+                        <p>Analice cómo está compuesta la venta de repuestos&#8230; si fueron por mostrador o vendidas
+                            por taller, las ventas por tipo de repuesto, y más.</p>
+
+                    </div>
+                    <div data-aos="zoom-in" data-aos-duration="2000"
+                        class="col-md-4 my-3 p-3 d-flex align-items-center text-center item-products aos-init">
+                        <div class="img-container-item">
+                            <img class="py-2" src="https://www.autologica.com/wp-content/uploads/2021/05/ico-004.png"
+                                alt="icono">
+
+                        </div>
+                        <h4 class="py-3 blue">Indicadores de servicios</h4>
+                        <p>Conozca la composición de las ventas de servicios, y compare sus diferentes tipos de venta:
+                            por garantía, al público, ventas internas, y más.</p>
+
+                    </div>
+                    <div data-aos="zoom-in" data-aos-duration="2000"
+                        class="col-md-4 my-3 p-3 d-flex align-items-center text-center item-products aos-init">
+                        <div class="img-container-item">
+                            <img class="py-2" src="https://www.autologica.com/wp-content/uploads/2021/05/ico-006.png"
+                                alt="icono">
+
+                        </div>
+                        <h4 class="py-3 blue">Moneda local y extranjera</h4>
+                        <p>Los indicadores del Tablero de Control se pueden ver en moneda local y en una moneda de
+                            referencia. Se puede cambiar la moneda con un solo clic.</p>
+
+                    </div>
+                    <div data-aos="zoom-in" data-aos-duration="2000"
+                        class="col-md-4 my-3 p-3 d-flex align-items-center text-center item-products aos-init">
+                        <div class="img-container-item">
+                            <img class="py-2" src="https://www.autologica.com/wp-content/uploads/2021/05/ico-005.png"
+                                alt="icono">
+
+                        </div>
+                        <h4 class="py-3 blue">Filtros dinámicos</h4>
+                        <p>Los indicadores de performance se pueden filtrar para llegar a la información precisa: por
+                            concesionaria, sucursal, tipo de venta, tipo de trabajo, fecha, y más.</p>
+
+                    </div>
+                    <div data-aos="zoom-in" data-aos-duration="2000"
+                        class="col-md-4 my-3 p-3 d-flex align-items-center text-center item-products aos-init">
+                        <div class="img-container-item">
+                            <img class="py-2" src="https://www.autologica.com/wp-content/uploads/2021/05/ico-007.png"
+                                alt="icono">
+
+                        </div>
+                        <h4 class="py-3 blue">Seguridad de datos</h4>
+                        <p>Configure su  dashboard para que cada usuario tenga acceso solo a la información que debe
+                            analizar.</p>
+
+                    </div>
+                    <div data-aos="zoom-in" data-aos-duration="2000"
+                        class="col-md-4 my-3 p-3 d-flex align-items-center text-center item-products aos-init">
+                        <div class="img-container-item">
+                            <img class="py-2" src="https://www.autologica.com/wp-content/uploads/2021/05/ico-009.png"
+                                alt="icono">
+
+                        </div>
+                        <h4 class="py-3 blue">Tiempo real</h4>
+                        <p>DMS + Acme Auto Showcase: el dashboard se actualiza en tiempo real con los datos del DMS para
+                            ofrecerle
+                            siempre información actualizada.</p>
+
+                    </div>
+                    <div data-aos="zoom-in" data-aos-duration="2000"
+                        class="col-md-4 my-3 p-3 d-flex align-items-center text-center item-products aos-init">
+                        <div class="img-container-item">
+                            <img class="py-2" src="https://www.autologica.com/wp-content/uploads/2021/05/ico-008.png"
+                                alt="icono">
+
+                        </div>
+                        <h4 class="py-3 blue">En la nube</h4>
+                        <p>Sky DMS y Autologica BI están alojados en la nube para mayor facilidad de uso y una mejor
+                            seguridad de datos.</p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid ancho-completo-p">
+            <div id="webform"></div>
+        </section>
+
+
+        <section class="head-alianzas">
+            <div class="container">
+                <div class="row py-5 ">
+                    <div class="col-md-6 mt-5">
+                        <h3> Quiero más información<br><br><span style="font-size:24px; font-weight:300;">Complete el
+                                formulario y en breve nos pondremos en contacto con Ud.</span><br><br> <a
+                                target="_blank" id="btn-wsp-form" href="https://wa.me/5493416920050"><span
+                                    style="color:#075E54; font-weight:600; font-size:18px; line-height:75%;"><img
+                                        style="width:7%;" src="">
+                                    Hablemos por Whatsapp y coordinemos una demo.</span></a></h3>
+                        <div class="divider-short-black mt-3"></div>
+                    </div>
+                    <div class="col-md-6 mt-5 pl-5">
+                        <div class="form-contato">
+
+                            <div class="wpcf7 no-js" id="wpcf7-f829-o1" lang="es-AR" dir="ltr">
+                                <div class="screen-reader-response">
+                                    <p role="status" aria-live="polite" aria-atomic="true"></p>
+                                    <ul></ul>
+                                </div>
+                                <form action="index.html#wpcf7-f829-o1" method="post" class="wpcf7-form init"
+                                    aria-label="Formulario de contacto" novalidate="novalidate" data-status="init">
+                                    <div style="display: none;">
+                                        <input type="hidden" name="_wpcf7" value="829" />
+                                        <input type="hidden" name="_wpcf7_version" value="5.9.3" />
+                                        <input type="hidden" name="_wpcf7_locale" value="es_AR" />
+                                        <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f829-o1" />
+                                        <input type="hidden" name="_wpcf7_container_post" value="0" />
+                                        <input type="hidden" name="_wpcf7_posted_data_hash" value="" />
+                                    </div>
+                                    <style>
+                                        .wpcf7-list-item {
+                                            display: inline-block;
+                                            margin: 0px 0 0 0em;
+                                            font-size: 19px !important;
+                                        }
+                                    </style>
+                                    <span class="wpcf7-form-control-wrap" data-name="nombre"><input size="40"
+                                            class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control"
+                                            id="nombre" aria-required="true" aria-invalid="false" placeholder="Nombre"
+                                            value="" type="text" name="nombre" /></span>
+                                    <span class="wpcf7-form-control-wrap" data-name="apellido"><input size="40"
+                                            class="wpcf7-form-control wpcf7-text form-control" id="apellido"
+                                            aria-invalid="false" placeholder="Apellido" value="" type="text"
+                                            name="apellido" /></span>
+                                    <span class="wpcf7-form-control-wrap" data-name="empresa"><input size="40"
+                                            class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control"
+                                            id="empresa" aria-required="true" aria-invalid="false" placeholder="Empresa"
+                                            value="" type="text" name="empresa" /></span>
+                                    <span class="wpcf7-form-control-wrap" data-name="email"><input size="40"
+                                            class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email form-control"
+                                            id="email" aria-required="true" aria-invalid="false" placeholder="Email"
+                                            value="" type="email" name="email" /></span>
+                                    <div class="row">
+                                        <div class="col-sm-6"><span class="wpcf7-form-control-wrap"
+                                                data-name="telefono"><input size="40"
+                                                    class="wpcf7-form-control wpcf7-tel wpcf7-text wpcf7-validates-as-tel form-control"
+                                                    id="telefono" aria-invalid="false" placeholder="Teléfono" value=""
+                                                    type="tel" name="telefono" /></span></div>
+                                        <div class="col-sm-6"><span class="wpcf7-form-control-wrap"
+                                                data-name="pais"><input size="40"
+                                                    class="wpcf7-form-control wpcf7-text form-control" id="pais"
+                                                    aria-invalid="false" placeholder="País" value="" type="text"
+                                                    name="pais" /></span></div>
+                                    </div>
+                                    <span class="wpcf7-form-control-wrap" data-name="comentarios"><textarea cols="40"
+                                            rows="10" class="wpcf7-form-control wpcf7-textarea form-control"
+                                            id="comentarios" aria-invalid="false" placeholder="Comentarios"
+                                            name="comentarios"></textarea></span>
+                                    <div>
+                                        Por favor, lea nuestra <a target="_blank" href=""><b>Política de
+                                                privacidad</b>.</a>
+                                        <br>
+                                        <br>
+                                        <span class="wpcf7-form-control-wrap" data-name="checkbox-417"><span
+                                                class="wpcf7-form-control wpcf7-checkbox"><span
+                                                    class="wpcf7-list-item first last"><label><input type="checkbox"
+                                                            name="checkbox-417[]"
+                                                            value="Por favor suscribirme al newsletter de Autologica, con mejoras prácticas para concesionarios y novedades de productos." /><span
+                                                            class="wpcf7-list-item-label">Por favor suscribirme al
+                                                            newsletter de Autologica, con mejoras prácticas para
+                                                            concesionarios y novedades de
+                                                            productos.</span></label></span></span></span>
+                                        <span class="wpcf7-form-control-wrap" data-name="checkbox-418"><span
+                                                class="wpcf7-form-control wpcf7-checkbox wpcf7-validates-as-required"><span
+                                                    class="wpcf7-list-item first last"><label><input type="checkbox"
+                                                            name="checkbox-418[]"
+                                                            value="Acepto la política de privacidad." /><span
+                                                            class="wpcf7-list-item-label">Acepto la política de
+                                                            privacidad.</span></label></span></span></span>
+                                    </div><br>
+                                    <input class="wpcf7-form-control wpcf7-submit has-spinner btn btn-primary"
+                                        type="submit" value="Enviar" />
+                                    <div class="wpcf7-response-output" aria-hidden="true"></div>
+                                </form>
+                            </div>
+                            <div id="webform-autologica"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+    <link rel='stylesheet' id='contact-form-7-css'
+        href='https://www.autologica.com/wp-content/plugins/contact-form-7/includes/css/styles.css' type='text/css'
+        media='all' />
+    <script type="text/javascript"
+        src="https://www.autologica.com/wp-content/plugins/contact-form-7/includes/swv/js/index.js"
+        id="swv-js"></script>
+    <script type="text/javascript" id="contact-form-7-js-extra">
+        /* <![CDATA[ */
+        var wpcf7 = { "api": { "root": "https:\/\/www.autologica.com\/wp-json\/", "namespace": "contact-form-7\/v1" }, "cached": "1" };
+        /* ]]> */
+    </script>
+    <script type="text/javascript"
+        src="https://www.autologica.com/wp-content/plugins/contact-form-7/includes/js/index.js"
+        id="contact-form-7-js"></script>
+    <script type="text/javascript" id="cf7-extras-js-extra">
+        /* <![CDATA[ */
+        var cf7_extras = { "events": { "track-ga": [], "redirect-success": [] }, "forms": { "829": { "title": "Landing | Espa\u00f1ol", "redirect_url": "" } } };
+        /* ]]> */
+    </script>
+
+    <footer>
+        <section class="footer pt-5">
+            <div class="container mb-4 pb-5 pt-4">
+                <div class="row">
+                    <div class="col-md-3">
+                        <p class="mt-4">
+                            <b>Soporte</b><br>Email: <a href="index.html"><span class="__cf_email__"
+                                    data-cfemail="1a69756a75686e7f5a7b6f6e7576757d73797b34797577">[email&#160;protected]</span></a>
+                        </p>
+                        <p class="mt-4">
+                            <b>Ventas</b><br>Email: <a href="index.html"><span class="__cf_email__"
+                                    data-cfemail="ea8985878f9889838b86aa8b9f9e8586858d83898bc4898587">[email&#160;protected]</span></a>
+                        </p>
+
+                    </div>
+                    <div class="col-md-3 second-column">
+                        <h6 class="mb-3">
+                            Soluciones</h6>
+                        <p>
+                            <a href="https://www.autologica.com/products/autologica-sky-dms/">Autologica Sky DMS</a>
+                            <br>
+                            <a href="https://www.autologica.com/solutions/autologica-dms-for-sap-business-one/">Autologica
+                                DMS for SAP Business One</a> <br>
+                            <a href="https://www.autologica.com/solutions/business-intelligence/">Business
+                                Intelligence</a> <br>
+                            <a href="https://www.autologica.com/solutions/tracker-crm/">Tracker CRM</a> <br>
+                            <a href="https://www.autologica.com/solutions/appoint365/">Turnos365</a> <br>
+                            <a href="https://www.autologica.com/solutions/dealertablet/">DealerTablet</a> <br>
+                            <a href="https://www.autologica.com/solutions/dealer-web-manager/">Dealer Web Manager</a>
+                            <br>
+                            <a href="https://www.autologica.com/solutions/job-clock/">Reloj de Trabajos</a> <br>
+                            <a href="https://www.autologica.com/solutions/ro-progress/">Avance de OR: Fases de órdenes
+                                de reparación</a> <br>
+                        </p>
+                    </div>
+                    <div class="col-md-3 second-column d-flex flex-column">
+                        <h6 class="mb-3">Partners e Integraciones</h6>
+                        <p>
+                            <a href="https://www.autologica.com/autologica-open-apis/">APIs</a> <br>
+                            <a href="https://www.autologica.com/autologica-partner-program/">Partners</a> <br>
+                            <a href="https://www.marketplace.autologica.com/">Marketplace</a> <br>
+                        </p>
+                        <h6 class="mb-3">Empresa</h6>
+                        <p>
+
+                            <a href="https://www.autologica.com/about-us/"> Inside Autologica</a> <br>
+
+                            <a href="https://www.autologica.com/success-stories/"> Historias de clientes</a> <br>
+
+                            <a href="https://www.autologica.com/recruiting/"> Trabaja con nosotros</a> <br>
+
+                            <a href="https://www.autologica.com/services/deployment/"> Implementación</a> <br>
+
+                            <a href="https://www.autologica.com/services/training/"> Capacitaciones</a> <br>
+
+                            <a href="https://www.autologica.com/strategic-allies/"> Aliados estratégicos</a> <br>
+                        </p>
+                    </div>
+                    <div class="col-md-3 second-column">
+                        <h6 class="mb-3">Ponte en contacto!</h6>
+                        <p>
+                            <a
+                                href="https://www.autologica.com/cdn-cgi/l/email-protection#a5cccbc3cae5c4d0d1cac9cac2ccc6c48bc6cac8">Escribinos
+                            </a>
+                            <br>
+                            <a href="https://www.linkedin.com/company/autologica/">Linkedin </a>
+                            <br>
+                            <a href="https://www.facebook.com/Autologica/">Facebook </a>
+                            <br>
+                            <a href="https://twitter.com/AutologicaDMS">Twitter </a>
+                            <br>
+                            <a href="https://www.instagram.com/autologicadms/?hl=es-la">Instagram </a>
+                            <br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container lines-footer mb-2">
+                <div class="row row-footer-nl">
+                    <div class="col-md-3 col-sm-12 py-2 d-flex align-items-center suscribite">Suscribete a nuestro
+                        newsletter</div>
+                    <div class="col-md-6 col-sm-12 py-2 d-flex align-items-center ">
+                        <p><input type="text" class="input-custom pl-4" placeholder="Ingrese su email"><a
+                                href="index.html#" id="btn-arrow" class=""></a></p>
+                    </div>
+                    <div class="col-md-3 col-sm-12 align-items-center footer-incons d-flex py-2 ">
+                        <a href="index.html" class="px-2" target="_blank"><img
+                                src="https://www.autologica.com/wp-content/themes/autologica/img/Icono facebook-01.svg"
+                                alt=""></a>
+                        <a href="index.html" class="px-2" target="_blank"><img
+                                src="https://www.autologica.com/wp-content/themes/autologica/img/Icono instagram-01.svg"
+                                alt=""></a>
+                        <a href="index.html" class="px-2" target="_blank"><img
+                                src="https://www.autologica.com/wp-content/themes/autologica/img/Icono linkedin-01.svg"
+                                alt=""></a>
+                        <a href="index.html" class="px-2" target="_blank"><img
+                                src="https://www.autologica.com/wp-content/themes/autologica/img/Icono twitter-01.svg"
+                                alt=""></a>
+                        <a href="index.html" class="px-2" target="_blank"><img
+                                src="https://www.autologica.com/wp-content/themes/autologica/img/Icono youtube-01.svg"
+                                alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-12 text-center">
+                    <p class="copiright">© Copyright Autologica. Reservados todos los derechos. Las distintas marcas
+                        comerciales pertenecen a sus respectivos propietarios..</p>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <script data-cfasync="false"
+        src="https://www.autologica.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script> AOS.init(); </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" rel="stylesheet"
+        type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://www.autologica.com/wp-content/themes/autologica/js/slider.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript"
+        src="https://www.autologica.com/wp-content/themes/autologica/slick/slick.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://www.autologica.com/wp-content/themes/autologica/js/menu.js"></script>
+    <script src="https://www.autologica.com/wp-content/themes/autologica/js/carrusel.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
+
+
+</body>
+
+
+</html>
